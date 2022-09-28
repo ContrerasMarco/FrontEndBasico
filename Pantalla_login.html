@@ -40,7 +40,7 @@
             width: 150px;
             margin-bottom: 50px;
             justify-self: center;
-            /*display: none;*/
+            display: none;
          }
          .label{
             font-size: var(--sm);
@@ -67,21 +67,17 @@
             font-size: var(--md);
             cursor: pointer;                        
          }
-         @media (max-width: 640px) {
-            .logo{
-                display: block;
-                }
-            }
-            .estilizar_parrafo{
+         .estilizar_enlace{
                 color: var(--hospital-green);
                 font-size: var(--sm);
                 font-family: Quicksand;
                 text-align: center;
                 margin-top: 30px;
+                text-decoration: none;
             }
             .button_secundary{
             background-color: var(--white);
-            border-color: var(--hospital-green);
+            border: solid 1px var(--hospital-green);
             border-radius: 10px;
             height: 50px;
             color: var(--hospital-green);
@@ -89,22 +85,31 @@
             cursor: pointer;      
             margin-top: 50px;
             }
-    </style>
+         @media (max-width: 640px) {
+            .logo{
+                display: block;
+                }
+                .button_secundary {
+                    position: absolute;
+                    bottom: 0;
+                    width: 300px;
+                    margin-bottom: 30px
+                }
+            }
+        </style>
 </head>
 <body>
     <div class="login">
         <div class="form-container">
             <img src="./curso-frontend-developer-practico-main/curso-frontend-developer-practico-main/logos/logo_yard_sale.svg" alt="Logo" class="logo">
-        
-
-       <form action="/" class="form">
+            <form action="/" class="form">
             <label for="password" class="label">Email address</label>
-            <input type="password" id="password" placeholder="Ingresa tu correo" class="input input-password">
+            <input type="text" id="text" placeholder="Ingresa tu correo" class="input input-text">
             <label for="new_password" class="label">password</label>
             <input type="new_password" id="new_password" placeholder="*********" class="input input-password">
             <input type="submit" value="Login" class="Button_primary login_button">
+            <a class="estilizar_enlace" href="./">Forgot my password</a>
         </form>   
-        <p class="estilizar_parrafo">Forgot my password</p>      
         <button class="button_secundary">Sign up</button>      
     </div>
     </div>
