@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Pantalla menu </title>
+
+
+<style>
+    :root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 12px;
+    }
+    body {
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto', sans-serif;
+     }
+    .Desktop_menu{
+        width: 150px;
+        height: auto;
+        border: 1px solid ;
+        border-radius: 7px;
+        display: flex;
+        justify-content: end;
+    }
+
+    ul {
+        list-style: none;
+      
+    }
+    a {
+        text-decoration: none;
+    }
+    a  {
+        font-family: 'Quicksand';
+        font-weight: 700;
+        color: var(--black);
+    }
+    .Personalizar {
+        font-family: 'Roboto' ;
+        font-weight: 300 ;
+        color: var(--hospital-green);
+        border-top: 1px solid  var(--very-light-pink);
+        padding-top: 20px;
+        
+    }
+    li {
+        margin: 10px;
+        padding: 10px;
+        font-size: var(--sm);
+    }
+
+</style>
+
+
+</head>
+<body>
+    <div class="Desktop_menu">
+    <ul>
+        <li><a href="">My orders</a></li>
+        <li><a href="">My account</a></li>
+        <li><a class="Personalizar" href="">Sign out</a></li>
+    </ul>
+</div>
+</body>
+</html>
