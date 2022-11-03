@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>NavBar</title>
+    <style>
+        :root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 16px;
+    }
+    body {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+         }
+         nav {
+            display: flex;
+            justify-content: space-between;
+        }
+         .menu_mobile{
+            display: none;
+         }
+         .logo_principal{
+            width: 150px;
+            padding-left: 40px;
+         }
+         .Navbar_derecho ul,
+         .Navbar_izquierdo ul
+         {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            height: 70px;
+           
+         }
+         .Navbar_derecho ul a,
+         .Navbar_izquierdo ul a
+         {
+            text-decoration: none;
+            color: var(--very-light-pink);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+            
+         }
+         .Navbar_derecho ul a:hover,
+         .Navbar_izquierdo ul a:hover
+         {
+            color: var(--hospital-green);
+            border: 1px solid var(--hospital-green);
+         }
+         .Navbar_izquierdo{
+            display: flex;
+         }
+         .Navbar_derecho{
+            display: flex;
+            padding: 0 30px;
+         }
+        .Navbar_derecho ul a {
+            color: var(--hospital-green);
+            font-weight: 700;
+        }
+         @media (max-width: 640px) {
+            .menu_mobile{
+                display: block;
+                padding-left: 30px;
+            }
+            .Navbar_izquierdo ul{
+                display: none;
+            }
+            .Sign_style {
+                display: none;
+            }
+            .Shopping_cart{
+                margin-right: 10px;
+            }
+         }
+
+
+    </style>
+</head>
+<body>
+            <nav class="menu_principal">
+                <img class="menu_mobile" src="./curso-frontend-developer-practico-main/curso-frontend-developer-practico-main/icons/icon_menu.svg" alt="">
+                <div class="Navbar_izquierdo">
+                <img class="logo_principal" src="./curso-frontend-developer-practico-main/curso-frontend-developer-practico-main/logos/logo_yard_sale.svg" alt="">
+
+                <ul>
+                    <li><a href="">All</a></li>
+                    <li><a href="">Clothers</a></li>
+                    <li><a href="">Electronics</a></li>
+                    <li><a href="">Furniture</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </div>
+                <div class="Navbar_derecho">
+                    <ul>
+                    <li><a class="Sign_style" href="">Sign in</a></li>
+                    <li><img class="Shopping_cart" src="./curso-frontend-developer-practico-main/curso-frontend-developer-practico-main/icons/icon_shopping_cart_notification.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            </nav>
+</body>
+</html>
